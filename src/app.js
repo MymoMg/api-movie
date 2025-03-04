@@ -3,6 +3,7 @@ const app = express();
 const sequelize = require('./config/db');
 const userRoutes = require('./routes/user.router')
 
+
 app.use(express.json());
 
 app.use('/auth', userRoutes);

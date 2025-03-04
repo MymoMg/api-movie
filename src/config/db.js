@@ -13,4 +13,6 @@ sequelize.authenticate()
 .then(() => console.log("Connexion OK"))
 .catch(err => console.log(err));
 
+sequelize.sync()
+
 module.exports = sequelize
